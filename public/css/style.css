@@ -1,0 +1,605 @@
+
+/* basic style */
+.websymbols
+{
+font-family: 'websymbolsligaregular';
+
+}
+
+
+html, body {
+    margin: 0;
+    height: 100%;
+    }
+
+body {
+  color:#666;
+  min-width: 480px;
+    min-height:100%;
+    background-color:whitesmoke;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+.content {
+  overflow: hidden;
+  padding-bottom: 2.714em;
+  height: auto;
+  min-height: 1px;
+  max-height: 999999px;
+
+}
+
+.blue {
+    color: #fff;
+    background-color: #009cde;
+    background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+}
+/*
+@font-face {
+  font-family: "FontAwesomex";
+  font-style: normal;
+  font-weight: normal;
+  src: url("fontawesome-webfont.woff");
+}
+*/
+.fa-circle-o-notch:before {
+    content: "\f1ce";
+}
+.@{fa-css-prefix}-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.@{fa-css-prefix}-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+  }
+}
+
+
+
+@font-face {
+  font-family: "xxc";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/static/9447.woff");
+}
+
+
+/*
+@font-face {
+  font-family: "Droid";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/static/font/Droid_Sans_Mono_stripped.woff");
+}
+*/
+a { text-decoration: none; color:#337AB7; }
+.a-no-style {  text-decoration: none ; }
+
+h3
+{
+font-size:1.2em;
+font-weight: normal;
+}
+ 
+ 
+.text-darkgray { color: #222 !important}
+.text-gray { color: gray !important}
+.text-gray2 { color: #5a5a5a !important; }
+.text-silver { color: silver !important}
+.text-black { color: black !important}
+.text-green { color: #4CAF50 !important;}
+.text-white { color: white !important;}
+.text-red { color: #e55 !important;}
+.text-blue { color: #0066ff;}
+.text-blue-smoke { color: #6299D3;}
+.text-yellow { color: #f7931a !important; }
+
+.text-blue-bitaps { color: #1478E2 !important;}
+.text-right { text-align:right !important;}
+.text-left { text-align:left !important; }
+.text-center { text-align:center  !important; }
+.inline {display: inline;}
+.bold {font-weight: bold;}
+.normal {font-weight: normal;}
+.display-none {display: none !important;}
+.table_sign { font-size: 1em !important;
+font-weight: bold !important; }
+.mono { font-family: Droid, monospace !important; }
+.ellipsis {white-space:nowrap ;overflow: hidden;text-overflow: ellipsis;}
+.hover-bg-whitesmoke:hover
+{
+background-color: whitesmoke;
+}
+
+.flexscreen
+{
+z-index: 0;
+min-height: 100vh;
+margin-top: -6.3em !important;
+box-sizing: border-box;
+padding-top: 5.9em;
+display: -webkit-inline-flex;
+display: inline-flex;
+flex-direction: column;
+-webkit-flex-direction:column;
+align-items: center;
+-webkit-align-items: center;
+justify-content:center;
+ -webkit-justify-content: center;
+width: 100%;
+
+}
+
+
+
+.pointer { cursor:pointer; }
+.bg-red { background-color: #e55 !important; }
+.bg-light-green { background-color: #C1F5C1 !important; }
+.bg-green { background-color:  #4CAF50 !important; }
+.bg-whitesmoke { background-color: whitesmoke !important; }
+.bg-gray { background-color: gray !important; }
+.bg-silver { background-color: silver !important; }
+.bg-blue { background-color: #1478E2  !important; }
+.br-silver { border: 1px solid silver !important; }
+.bg-blue-smoke { background-color: #6299D3;}
+
+.line
+{
+  width:100%;
+  height:0.07em;
+}
+
+.bottom
+{
+  display: inline-block;
+  padding: 0.35em !important;
+  
+  border-radius: 0.3em !important;
+
+}
+
+.small-bottom
+{
+  display: inline;
+  padding: 0.12em !important;
+  padding-left: 0.36em !important;
+  padding-right: 0.36em !important;
+  border-radius: 0.18em !important;
+}
+ 
+
+/* <base elements> */
+
+    .block_container
+    {
+    max-width:91em;margin:0 auto;
+    }
+
+    .panel
+    {
+    background:white;
+    margin:0em;
+    padding:1.38em;
+    margin: 0.71em;
+    border-radius: 0.357em;
+    border:1px solid #eee;
+    overflow: hidden;
+    
+    }
+.shadow
+  {  
+text-shadow: 0.1em 0.1em 0.05em 0em #ddd;}
+    .separator { clear:both; }
+
+    .panel-header
+    {
+    padding-bottom:0.714em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+        font-family: 'Myriad Set Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.271em;
+    min-height: 1.271em;
+    }
+
+    .panel-title
+    {
+    position: relative;
+    box-sizing: border-box;
+    padding-right: 2em;
+    float:left;
+     
+    text-overflow: ellipsis;
+  
+    }
+#address-menu
+{
+  margin:0.5em;padding-left: 2em;
+}
+
+    .panel-wrap
+    {
+    display:block;
+    text-align:right;
+    }
+      
+
+    .panel-menu
+    {
+    text-align:right;
+    color:#337AB7;
+    font-size: 0.8em;
+    }
+     
+    .panel-menu:hover
+    {
+    text-align:right;
+    color:#003366;
+    text-decoration:underline;
+    }
+
+     
+
+
+    .table
+    {
+    width:100%;
+    display: table;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    font-weight:normal;
+    color:#5A5A5A;
+    margin:0 auto   ;
+    border-collapse: collapse;
+    }
+
+    .table-header
+    {
+    border-collapse: collapse;
+    border-spacing: 0em 0em;
+    box-sizing: border-box;
+    color: gray;
+    border-bottom:1px solid gray;
+    }
+    .row
+    {
+      width: 100%;
+    }
+    .row:hover > td{ background-color: whitesmoke; }
+ 
+  /*  .table , td , th
+    {
+    border-bottom: 1px solid #F0F0F0; 
+    
+    height:1.608em;
+    }*/
+ 
+    .table td
+    {
+        padding: 0.714em;
+    }
+    .table  th
+    {
+      color:#666;
+    }
+/* </base elements> */
+
+
+  
+     
+ 
+.fa
+{
+
+
+
+  display: inline-block;
+font-family: FontAwesomex;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+line-height: 1;
+font-size-adjust: none;
+font-stretch: normal;
+-moz-font-feature-settings: normal;
+-moz-font-language-override: normal;
+font-size: inherit;
+text-rendering: auto;
+
+}
+
+.fa-order:before {
+    content: "\f016";
+}
+
+.remove:before {
+    content: "\f00d";
+}
+.fa-gear:before, .fa-cog:before {
+    content: "\f013";
+}
+
+.fa-gears:before, .fa-cogs:before {
+    content: "\f085";
+}
+
+.fa-arrows-h:before {
+    content: "\f07e";
+}
+
+ .fa-warning:before, .fa-exclamation-triangle:before {
+    content: "\f071";
+}
+
+.fa-unhappy:before {
+    content: "\f119";
+}
+
+.fa-expand:before {
+    content: "\f065";
+}
+
+.fa-angle-double-up:before {
+    content: "";
+}
+
+.fa-angle-double-down:before {
+    content: "";
+}
+
+.fa-angle-up:before {
+    content: "";
+}
+
+.fa-angle-down:before {
+    content: "";
+}
+
+.fa-pause:before {
+    content: "";
+}
+
+.fa-play:before {
+    content: "";
+}
+.fa-search:before {
+    content: "";
+}
+
+.fa-qrcode:before {
+    content: "";
+}
+.fa-long-arrow-down:before {
+    content: "";
+}
+.fa-level-down
+{
+        transform: rotate(90deg);
+  transform-origin: left top 0;
+  margin-top:0.3em;
+}
+.fa-level-down:before {
+    content: "";
+
+}
+
+.fa-long-arrow-right:before {
+    content: "";
+}
+
+.fa-external-link:before {
+    content: "";
+}
+
+.fa-tx:before {
+    content: "";
+}
+.fa-pause:before {
+    content: "";
+}
+.fa-play:before {
+    content: "";
+}
+
+.fa-cube:before {
+    content: "";
+
+}     
+
+
+.fa-bitcoin:before, .fa-btc:before {
+   /*     content: "";*/
+      /*  content: "";*/
+/*            content: "";*/
+            content: "";
+
+}
+.fa-chevron-down:before {
+    content: "";
+}
+
+.fa-chevron-right:before {
+    content: "";
+}
+
+.fa-chevron-up:before {
+    content: "";
+}
+
+  
+
+ input.middle:focus {
+    outline-width: 0;
+}
+
+.search_box
+{
+ 
+}
+    .search-box
+     input
+    {
+      -webkit-appearance: textfield;
+    width:7em; 
+    /*-webkit-box-shadow:0 0 0 50px whitesmoke inset;*/
+    outline-width: 0; 
+    padding-left: 0em;
+      
+    color:#333;
+     font-size: 1em;
+     text-align: left;
+     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    border:0px;
+
+   
+
+    box-sizing: border-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    }
+
+    .search-box-wrap {
+ 
+    margin-top: 3em;
+    border-radius:0.285em;
+      position: relative;
+      display: block;
+      padding: 0.4em;
+  	width: 10em;
+	margin:0px auto;
+      /*background-color: #0066cc;*/
+      background-color: whitesmoke;
+      text-align: center;
+    border:0.15em solid silver;
+    }
+
+  .calc-box
+  {
+    width: 7em;
+    background-color: transparent;
+    border: 0px;
+    /*border-bottom: 0.1em solid white;*/
+    color: white;
+    padding: 0.2em;
+    border-radius: 0em;
+  }
+    .calc-box input
+    {
+      color:white;
+      text-align: right;
+      width:4em;
+    }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+ 
+input[type="text"]
+{
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+}
+.search-box input::-webkit-input-placeholder {color:silver;}
+.search-box input::-moz-placeholder          {color:silver;}/* Firefox 19+ */
+.search-box input:-moz-placeholder           {color:silver;}/* Firefox 18- */
+.search-box input:-ms-input-placeholder      {color:silver;}
+.paybutton
+{
+  display: inline-block;
+  padding: 0.35em !important;
+  background-color: #f7931a;
+  color: white;
+  cursor:pointer;
+  border-radius: 0.3em !important;
+  min-width: 5em;
+  padding-left: 0.8em !important;
+  padding-right: 0.8em !important;
+  margin-left: 1em;
+  margin-right: 1em;
+
+}
+ 
+.paybutton:hover
+
+{
+background-color:#ff8c00;
+
+}
+.qrcode {
+  width: 8em;
+  height: 8em;
+
+    margin: 0.4em;
+    margin-bottom: 0.5em;
+     
+    background-color: white;
+    float: left;
+}
+
+.paymentdiv
+{
+  display: block;
+  font-size: 0.8em;
+    width: 23em;
+  height: 11.5em;
+  background-color: whitesmoke;
+  margin:0px auto;
+  color:#222;
+  margin-top: 0.5em;
+  border-radius: 0.3em !important;
+    border:0.25em solid silver;
+
+}
+
+
+
+.operator
+{
+  margin-top: -3em;
+}
+.animate-wrap
+{
+  width: 120em;
+}
